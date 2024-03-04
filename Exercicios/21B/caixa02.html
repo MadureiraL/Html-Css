@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: auto;
+            
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+        }
+        header > h1{
+            margin-left: 20px;
+        }
+        nav{
+            background-color: rgb(145, 145, 145);
+            text-align: right;
+            padding: 11px 15px 10px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+        nav > a:hover{
+          background-color: black;  
+          padding: 8px;
+          border-radius: 12px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        article > aside{
+            background-color: rgb(131, 130, 130);
+            border-radius: 10px;
+            padding: 5px;
+            text-align: justify;
+             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+            
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site test</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, maiores aperiam rem excepturi fugit perferendis officiis odit labore mollitia corrupti ex sapiente dolorem aspernatur recusandae! Tenetur deleniti perferendis quidem voluptatibus.</p>
+                <aside>
+                    Escrito por levilson
+                </aside>
+            </article>
+            
+        </section>       
+    </main>
+    <footer>
+        Feito por Levi
+    </footer>
+</body>
+</html>
