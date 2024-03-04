@@ -1,0 +1,171 @@
+Cores CSS
+Há quatro formas de representar cores
+1- Nome
+2- forma hexadecimal
+3- rgb(Red,Green,Blue)
+4- HSL(hue, sturation, luminosity
+
+Circulo cromatico
+
+cores primárias: amarelo, vermelho e azul
+cores secundarias: laranja,roxo e verde
+tercearia mistura de uma cor primaria com uma secundaria
+
+cores complementares: cores de contraste cor mais distante dela
+
+cores análogas: são as cores mais próximas do lado direito e esquerdo
+
+analogas relacionadas: duas cores para direita ou para esquerda mas pulando a terceira cor
+
+configurações globais das Css *{}
+
+para gradiente, puxa style abaixo do titulo e coloca a tag background image: linear gradiente
+background-attachment: fixed(fundo fixo)
+
+é sempre bom colocar o seu conteudo principal dentro de main, e puxalo para o style css
+
+configurações usaveis
+width 600px; (tamanho)
+padding: 10px;( dá uma engordadinha)
+margin: auto(centraliza tudo no meio)
+border radius: faz as pontas arredondarem
+box- shadow: parametros- sombra lado, sombra baixo, sombra espalha, cor e transparencia
+text- shadow
+
+
+tag text-align: coloco o texto onde eu quiser e como quiser
+
+* medidas absolutas x medidas relativas
+
+medidas absolutas: cm, mm, in, pt, pc (pode não ser muito exato em aparelhos diferentes)
+
+medidas relativa: em, ex, rem, vw, vh, %
+
+recomendado usar: em ou px
+1em é igual a 16px
+2em é igual ao dobro de 16px ou seja 32px
+
+font- weight( peso da font)
+tipos de peso: ligther, normal,bold, bolder
+sublinhar: text-decoration
+para colocar margem de começo de frase coloque initial
+
+font style: italic, normal...
+
+quando precisarmos usar muitas configurações em uma unica fonte usamos uma shorthand. 
+fonte: font style -> font weight -> font size -> font family
+
+não exagere com as fontes, geralmente apenas 3 fontes
+1 para grandes titulos
+2 para destaque
+3 para normal
+
+font externa(download)
+
+* tipos de format
+-opentype(otf)
+-truetype(ttf)
+-embedded-opentype
+-truetype-aat
+-svg
+
+Para usar uma font externa baixada eu preciso usar a regra font face{...} no src eu coloco o nome do arquivo e logo após incluo um format e coloco o formato da font. no font family eu dou um nome a font que eu vou referenciar depois
+
+* div- é um espaço que ocupa a tela toda
+uma div pode ser pai de um elemento usando: > maior que. ex: div > p
+
+* id com CSS(não posso usar o id mais de uma vez em um documento, nesse caso usamos class)
+
+usando id="" dentro de uma tag, eu posso nome-la
+ex <h1 id="principal"> esse h1 vai ser diferente dos outros h1
+para me chamar ele no CSS eu coloco 
+h1#nome que eu coloquei
+
+tudo em html que é id em css vira #
+tudo em html que é class em css vira .
+
+* pseudo classes: está relacionado ao estado de um determinado elemento, consigo configurar o estado. pseudo classes dois pontos o nome(:) do elemento
+
+* hover:passar o mouse faz aparecer algo
+
+* active: algo que foi clicado
+
+* pseudo elemento: dois pontos ::
+::  affer content: faz aparecer algo do lado
+transition-duration(use para fazer aparecer de forma lenta)
+
+display: inline-block(deixa tudo na mesma linha)
+display: none(faz desaparecer)
+display: block( pode ser usado em conjunto com o none para fazer aparecer algo)
+
+altura= height
+largura= width
+
+ # = id
+ . = class
+ : = pseudo class
+ :: = pseudo elemento
+ > = children 
+
+* modelo de caixa
+uma caixa dentro da outra se chama aninhamento
+
+todo elemento tem:
+conteudo -> border -> pedding -> margin e outline se precisar
+
+border shorthand: tamanho (px) style color
+padding shorthand: começa: top right bottom left(como se fosse um relogio)
+se eu colocar um valor só vale para os 4 pontos, se colocar só dois vale para cima e baixo, lado lado
+
+* tipos de caixas
+
+box-level- sempre se inicia em uma linha nova(basicamente uma quebra de linha) ocupa todo espaço do navegador tag-ex: div,h1-h6,p,main,header,article,nav,aside,footer,form,video
+
+inline-level- continua na linha do conteudo( ocupa apenas o espaço necessario) tag-ex: span,a,code,small,strong,em,sup-sup,label,button,input,select
+
+gruping tags
+obs: melhor do que uma div é usar as tags semanticas que são consideradas divs
+cabeçalho: header
+menu(navegação): nav
+conteudo principal: main
+seção: section 
+artigo dentro de seção: article
+aside: é um conteudo atrelado ao article
+rodapé: footer
+
+div: box-level
+spam: inline-level
+
+Var em CSS
+- podemos declarar um variaveis em CSS usando a pseudo class :root{}
+e toda variavél começa com dois traços. ex: --cor0: numero da cor ;
+
+responsividade 
+para tornar uma pagina responsiva utilize:
+min width:300px
+max width:1000px
+caso for uma imagem é legal colocar:
+width 100%
+
+* Como colocar um emoji em uma lista ul
+use o comando list-style-type'\codigo do emoji\00a0\00a0'
+obs: esses 00a0 são espaços sem quebra de linha
+obs: esse comando não funciona para todos os navegadores
+
+se eu quiser colocar duas colunas na lista é só utilizar o comando columns: 2
+
+* como deixar um video do youtube responsivo
+
+pass 1- envelope o inframe e coloque ele dentro de uma div, tambem adicione uma class nele
+
+pass 2- configure a div do video. porem no final não esqueça de colocar padding-bottom: valor em porcentagem %
+position: relative
+
+abaixo vamos configurar a div que é pai do inframe
+então ficará: div.class( a class escolhida) > inframe
+position: absolute;
+top: configuração relativa
+left: configuração relativa
+width: configuração relativa
+height: configuração relativa
+obs: todos acima devem ser configurados em porcentagem % 

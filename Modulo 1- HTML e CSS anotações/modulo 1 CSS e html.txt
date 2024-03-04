@@ -1,0 +1,127 @@
+Conteudo em HTML
+
+Exemplo de titulo
+
+para colocar um titulo precisa-se de uma abertura de tag: <h1>titulo</h1>
+
+paragrafo: <p>paragrafo</p>
+
+imagem: <img src=" foto.png" alt="exemplo de foto">
+
+<p> paragrafo
+
+<hr> linha
+
+<br> quebra de linha
+
+emoji: &#x"code";
+
+para colocar um favicon: link:favicon
+
+Para negrito não semantico, tag: <b> (evite usar)
+
+negrito semantico: <strong>
+
+italico não semantico: <i> (evite usar)
+
+italico semantico: <em>
+
+marca texto: <mark>
+
+texto riscado: <del>
+
+texto sumblinhado: <ins>
+
+texto sobrescrito: <sup>
+
+texto Subescrito  <sub>
+
+fonte mono espaçada: <code>
+
+envelopa o <code> com a tag: pre (ele fica arrumado)
+
+citações simples("") tag: <q>
+
+citação completa: blockquote cite
+estilo em CSS
+
+abreviações: <abbr>
+
+tipos de listas
+
+listas ordenadas(as coisas acontecem em ordem): ol e cada item tem que ter <li>  
+
+listas não ordenadas tag: <ul> e cada item <li>
+
+lista de definição tags: <dl> dentro de dl: dt= termo e dd= descrição
+
+links e ancoras
+
+links externos: <a> href:link dentro. para abir em outra aba use target=_blank rel=external
+
+rel types: ajuda no mecanismo de busca
+
+rel external= para links externos
+
+rel next= para um link interno
+
+rel prev= para voltar por um link interno
+
+rel nofollow= não dá aval para o conteudo da pagina
+
+target types:
+
+target=_blank
+
+target=_self 
+
+para voltar para uma pagina anterior que está uma pasta diferente usamos ../ 
+
+
+imagem dinamica: a ordem importa! use sempre: max-width. e sempre coloque do menor para o maior!
+celular: 300x300px
+tablet: 700x700px
+computador 1000x1000px
+
+Use a tag <picture> e depois use a tag source:media:type
+
+
+colocando áudio: use a tag <audio> controls autoplay
+use preload=metadata dentro da tag audio
+
+Para garantir que vai funcionar use: a tag <audio> source src type=
+podemos usar o loop tambem
+
+existem três "type" de audio. ele sempre vai carregar nessa ordem! 
+mp3=audio/mpeg
+ogg=audio/ogg
+wave=audio/wav
+
+Videos
+use a tag <video>. para carregar varios videos de formatos diferentes use source type
+não esqueça de usar controls para aparece o play e width para reduzir o tamanho
+poster para colocar uma "tamb"
+
+é possivél colocar um video do youtube ou vimeo: recomenda-se(ponto positivo já que não precisa de uma hospedagem)
+ 
+formatos compatives:
+mp4=m4V
+mkv
+webm(não use, qualidade horrível)
+ogg
+
+
+
+CSS
+
+Há três tipos de forma de aplicar CSS
+
+Estilos inline(não recomendado)
+
+Estilos locais: abaixo do title vamos declarar tag <syle> apartir dela vamos selecionar o que precisamos mudar. ex: body{...}
+utilizados para paginas simples e unicas
+
+Estilo externo mais versátil
+coloca um link:CSS abaixo de title e crie uma pagina chamada style.Css
+
+
