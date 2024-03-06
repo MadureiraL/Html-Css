@@ -1,0 +1,8 @@
+* usando imagem como fundo
+para colocar uma foto como fundo use a background image: url() 
+- podemos configurar o tamanho da imagem usando a tag backgound-size
+- podemos configurar a repetição da imagem com o backgound-repeat
+- podemos usar o backgound-position para mexer na posição da imagem
+obs: a imagem contem sempre duas configurações, ex: left top, center center, right bottom
+não esqueça de sempre mexer no tamanho da viewport usando vh para não deixar a imagem achatada 
+user backgound-size: cover(ele resolve o problema da imagem repetida
