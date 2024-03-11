@@ -6,3 +6,10 @@ para colocar uma foto como fundo use a background image: url()
 obs: a imagem contem sempre duas configurações, ex: left top, center center, right bottom
 não esqueça de sempre mexer no tamanho da viewport usando vh para não deixar a imagem achatada 
 user backgound-size: cover(ele resolve o problema da imagem repetida
+imagem travada no fundo: use a tag background-attachment: fixed
+
+shorthand backgound: cor > image > position > repeat > size > attachment
+menos o size, então use background size abaixo da shorthand
+
+centralização vertical de caixas
+para ter uma centralização precisamos de uma div em position absolute e outra em relative, assim podemos usar as configurações top e left na div que contem a configuração relative colocando ela em 50% 50% e tambem usar a confiração transform: translate (-50%, -50%) para centralizar
