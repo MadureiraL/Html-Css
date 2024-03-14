@@ -139,6 +139,9 @@ spam: inline-level
 Var em CSS
 - podemos declarar um variaveis em CSS usando a pseudo class :root{}
 e toda variavél começa com dois traços. ex: --cor0: numero da cor ;
+ex: :root{
+    --cor0: #0496FF;
+}
 
 responsividade 
 para tornar uma pagina responsiva utilize:
