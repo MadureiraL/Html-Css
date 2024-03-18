@@ -12,3 +12,24 @@ imagem travada no fundo: use a tag background-attachment: fixed
  
 centralização vertical de caixas
 para ter uma centralização precisamos de uma div em position absolute e outra em relative, assim podemos usar as configurações top e left na div que contem a configuração relative colocando ela em 50% 50% e tambem usar a confiração transform: translate (-50%, -50%) para centralizar
+
+* Criação de tabelas em html
+-para criar uma tabela use a tag table
+
+hierarquia da tabela SIMPLES
+TABLE
+ table row= tr
+  table header= th
+   table data= td
+
+tabela complexa
+
+ TABLE
+    captionn
+  head
+    tr td th
+  tbody
+    tr td th
+  tfoot
+    tr td th
+		
