@@ -33,3 +33,10 @@ tabela complexa
   tfoot
     tr td th
 		
+para fazer uma tabela zebrada use tbody > tr:nth-child(2n) ou odd(impar) even(par)
+
+como fazer o cabeçalho ficar fixo na rolagem de tela
+use (position: relative) no table e depois de o caminho: thead > tr > th e coloque a position sticky, top -1px e o backgound da mesma cor da tabela
+
+mesclagem
+para fazer mesclagem é só usar colspa para coluna e rowspan para linha no td que você quiser que ocupe o espaço 
