@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+</head>
+<style>
+       table {
+            width: 600px;
+            border-collapse: collapse;
+            
+        }
+    
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .name{
+            background-color: aqua;
+        }
+       .cgrupo{
+        background-color: blue;
+       }
+</style>
+<body>
+    <h1>Uitilizando Colgroup</h1>
+    <table>
+    <colgroup>
+        <col class="name">
+        <col class="cgrupo" span="3">
+    </colgroup>    
+        <tr>
+            <th>Nome</th>
+            <th>sexo</th>
+            <th>idade</th>
+            <th>emprego</th>
+        </tr>
+        <tr>
+            <th>linha 1</th>
+            <td>dado 1</td>
+            <td>dado 2</td>
+            <td>dado 3</td>  
+        </tr>
+            <tr>
+                <th>linha 2</th>
+                <td>dado 4</td>
+                <td>dado 5</td>
+                <td>dado 6</td>
+            </tr>
+            <tr>
+                <th>linha 3</th>
+                <td>dado 7</td>
+                <td>dado 8</td>
+                <td>dado 9</td>
+            </tr>
+            <tr>
+                <th>linha 4</th>
+                <td>dado 10</td>
+                <td>dado 11</td>
+                <td>dado 12</td>
+            </tr>
+    </table>
+</body>
+</html>

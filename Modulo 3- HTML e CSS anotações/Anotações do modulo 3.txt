@@ -40,3 +40,18 @@ use (position: relative) no table e depois de o caminho: thead > tr > th e coloq
 
 mesclagem
 para fazer mesclagem é só usar colspa para coluna e rowspan para linha no td que você quiser que ocupe o espaço 
+
+podemos mudar as configurações de uma coluna usando a tag colgroup embaixo da tag table. ex 
+colgroup
+col class
+col class
+col class
+col class
+colgroup
+com isso damos classe para quantas colunas quisermos
+podemos tambem utilizar a tag span após o nome da class e a configuração feita em css irá para quantas colunas quisermos. ex
+col class "lorem" span"4"
+pasta 23 > tabela004
+
+tabela responsiva
+para deixar uma tabela responsiva coloque ela dentro de uma div de um id para ela e use overflow auto no css
