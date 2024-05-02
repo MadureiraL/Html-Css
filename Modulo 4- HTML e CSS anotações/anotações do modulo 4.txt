@@ -13,3 +13,8 @@ ex <iframe name="tela" src="">
 
 podemos tambem colocar html e até mesmo imagens dentro de um iframe vazio para ser nosso padrão utilizando "srcdoc" em vez de apenas src
    <p>infeliz seu navagador não é compativel</p>
+
+Deixando o iframe mais seguro
+- para deixar-mos o iframe mais seguro, utilizamos a configuração sandbox dentro do iframe: sandbox ="sandbox"(isso liga todas as configurações de defesa do sandbox. Caso queiramos deixar só algumas configurações de defesa, tiramos o sandbox que está entre as aspas e colocamos: allow-same-origin allow-forms allow-scripts.
+
+- Podemos tambem colocar o referrerpolicy="no-referrer" ele bloqueia a captura de dados do site para usar em progandas e anuncios 
