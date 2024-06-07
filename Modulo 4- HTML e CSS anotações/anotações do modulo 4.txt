@@ -19,5 +19,12 @@ Deixando o iframe mais seguro
 
 - Podemos tambem colocar o referrerpolicy="no-referrer" ele bloqueia a captura de dados do site para usar em progandas e anuncios
 
-como colocar uma imagem no meio da tela
+- como colocar uma imagem no meio da tela
 utilize position relative no main e position absolute na "div" coloque top: 50% e left 50% e após isso utilize o transfomr: translate(-50%, -50%)
+
+
+-iframe
+podemos chamar um iframe referenciando o nome dele. precisamos apenas colocar um nome no iframe como no exemplo abaixo:
+<iframe name="tela">
+
+para chamarmos esse iframe usamos a função target em outro iframe e colocamos ele como um link a a pagina que você quer trazer 
