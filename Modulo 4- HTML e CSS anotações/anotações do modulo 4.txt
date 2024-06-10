@@ -28,3 +28,11 @@ podemos chamar um iframe referenciando o nome dele. precisamos apenas colocar um
 <iframe name="tela">
 
 para chamarmos esse iframe usamos a função target em outro iframe e colocamos ele como um link a a pagina que você quer trazer 
+
+usando hover criamos um problema quando colocamos uma borda para resolvermos colocamos o no outro arquivo box sizing: border box
+
+para fazermos um botão se mexer, podemos usar dentro do hover um transform: translate e colocar(-3px, -3px)
+usamos o transition para a movimentação ficar suave
+
+temos como esconder a barra de rolagem de uma página, basta apenas usar np CSS o comando 
+ 
